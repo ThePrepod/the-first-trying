@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop</title>
     <style>
-        @import url("https://fonts.googleeaps.com/css2?family=Monstarrat:wght@200;500&display=swap");
+        @import url("https://fonts.googleeapis.com/css2?family=Monstarrat:wght@200;500&display=swap");
 
         *{
             margin: 0;
@@ -19,7 +19,7 @@
             font-family: 'Monsterrat', sans-serif;
             font-weight: 200;
             color: var(--tg-theme-text-color);
-            backdrop: var(--tg-theme-text-color);
+            background: var(--tg-theme-text-color);
         }
 
         #main {
@@ -43,6 +43,11 @@
             margin: 0 auto;
         }
 
+        .button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
         button {
             border: 0;
             border-radius: 5px;
@@ -59,14 +64,16 @@
         #form {
             display: none;
             text-align: center;
+
         }
+
         input {
             width: 90%;
             outline: none;
             margin: 10px 5%;
             padding: 15px 10px;
             font-size: 14px;
-            border: 2px solid silver;
+            border: 2px solid #adadad;
             border-radius: 5px;
         }
         input:focus {
@@ -79,7 +86,9 @@
         <h1>Онлайн магазин</h1>
         <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
         <p>Lorem ipsum dolor sit amet, consectecur adipisicing elit. Accusantium ipsum magni, molestias.</p>
-        <button id="buy">Купить</button>
+        <div class="button-container">
+            <button id="buy">Купить</button>
+        </div>
     </div>
     <form id="form">
         <input type="text" placeholder="Имя" id="user_name">
@@ -87,7 +96,7 @@
         <input type="text" placeholder="Телефон" id="user_phone">
         <button id="order">Оформить</button>
     </form>
-    <script scr="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let buy = document.getElementById('buy');
