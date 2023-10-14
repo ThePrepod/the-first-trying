@@ -25,7 +25,7 @@
         #main {
             width: 100%;
             padding: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         h1 {
@@ -99,7 +99,7 @@
             document.getElementById('form').style.display = 'block'
             document.getElementById('user_name').value = tg.initDataUnsafe.user.first_name + '' + tg.initDataUnsafe.user.last_name;
         });
-        
+
         order.addEventListener('click', () => {
             tg.close();
         })
